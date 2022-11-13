@@ -7,3 +7,9 @@ function errorFunction() {
 function errorCaller() {
   errorFunction();
 }
+
+try {
+  errorCaller();
+} catch (e) {
+  console.log(e);
+}
