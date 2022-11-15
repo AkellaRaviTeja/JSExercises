@@ -1,4 +1,5 @@
 // What is a callback?
+//callback function is a function which is called inside some other function
 
 function welcome(name) {
   setTimeout(() => {
@@ -7,10 +8,12 @@ function welcome(name) {
 }
 
 function success() {
-  console.log("Greetings successful!!");
+  setTimeout(() => {
+    console.log("Greetings successful!!");
+  }, 1001);
 }
 
-welcome();
+welcome("Bhavana");
 success();
 
 // In the above example:

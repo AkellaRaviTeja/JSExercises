@@ -21,3 +21,11 @@ console.log(A() ?? C() ?? D());
 console.log(B() ?? D());
 
 //Comment the outputs below and reason
+//A Was called as it is undefined it will call C()
+//C was called as it is null it will call D()
+//D was called
+//"foo"
+
+//B was called it will return false and execution will be completed
+
+//if it is null or undefined it will move further
