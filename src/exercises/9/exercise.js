@@ -10,7 +10,7 @@ function multiplyArrayByTwo(inputArray) {
   // });
 
   //using array function in the map methods
-  inputArray = inputArray.map((value) => value * 2);
-  console.log(`Given input array is ${inputArray}`);
+  let updatedArray = inputArray.map((value) => value * 2);
+  console.log(`Given input array is ${updatedArray}`);
 }
 multiplyArrayByTwo([1, 2, 34, 4]);
