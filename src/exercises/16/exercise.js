@@ -2,11 +2,10 @@
 // - Identify the class variables
 // - Create function for all the possible functionalities.
 
-class Leave {
-  constructor(name, numberofdays, reason) {
+export class Leave {
+  constructor(name, numberofdays) {
     this.name = name;
     this.numberofdays = numberofdays;
-    this.reason = reason;
   }
   generateLeaveMessage() {
     console.log(
@@ -15,6 +14,6 @@ class Leave {
   }
   //...
 }
-const Bhavana = new Leave("Bhavana", 2, "not feeling well");
-console.log(Bhavana);
-console.log(Bhavana.generateLeaveMessage());
+// const Bhavana = new Leave("Bhavana", 2, "not feeling well");
+// console.log(Bhavana);
+// Bhavana.generateLeaveMessage();

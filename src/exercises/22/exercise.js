@@ -7,8 +7,8 @@ function randomCalculator() {
     y = 0;
   x = x * 10 + 1 - (2 / 2) * 3; //x=98
   y = x - 1 + 3 * 10 - 2; //y=125
-  x = x * 2 - (1 / 3) * 3; //x=
-  x = x + 10 - 2 - 3 * 2; //x=
+  x = x * 2 - (1 / 3) * 3; //x=195
+  x = x + 10 - 2 - 3 * 2; //x=197
   console.log(x);
 }
 randomCalculator();
