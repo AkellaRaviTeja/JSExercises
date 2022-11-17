@@ -1,13 +1,16 @@
 // Convert the below functions into arrow functions.
 
-const greetings = function () {
+const greetings = () => {
   return "Hello World";
 };
 
-const isEven = function (num) {
+const isEven = (num) => {
   if (num % 2 == 0) {
     return true;
   } else {
     return false;
   }
 };
+
+console.log(greetings)
+console.log(isEven)
