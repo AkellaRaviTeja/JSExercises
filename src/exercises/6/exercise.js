@@ -3,5 +3,14 @@
 
 function findTheLength(inputArray) {
   let lengthOfArray;
-  console.log(`Length of the given input array is ${lengthOfArray}`);
+
+  if(inputArray instanceof Array) {
+      lengthOfArray = inputArray.length;
+      console.log(`Length of the given input array is ${lengthOfArray}`);
+  }
+  else {
+      console.log(`Invalid Array`)
+  }
 }
+
+findTheLength([1234, 5678, 90]);
