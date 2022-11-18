@@ -7,4 +7,32 @@
 
 const counter = (function () {
   //Your code goes here.
+  let val = 0;
+  return function() {
+    return {
+      increment() {
+        val += 1
+      },
+      decrement() {
+        val -= 1
+      },
+      value() {
+        return val;
+      }
+    }
+  }
 })();
+
+
+const c = counter();
+
+console.log(c.value());
+
+c.increment();
+c.increment();
+
+console.log(c.value());
+
+c.decrement();
+
+console.log(c.value());
