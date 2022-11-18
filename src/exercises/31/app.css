@@ -1,0 +1,52 @@
+.container {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    border-bottom: 2px solid gray;
+    padding-bottom: 18px;
+}
+
+.title {
+    font-size: 44px;
+}
+
+#input-text {
+    display: block;
+    width: 75vw;
+    height: 52px;
+    margin-bottom: 8px;
+}
+
+#input-text:focus {
+    outline: none;
+}
+
+#lang {
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+#btn {
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    letter-spacing: 1px;
+    padding: 6px 10px;
+    border-radius: 5px;
+    border: 0;
+    cursor: pointer;
+}
+
+#text-translate {
+    font-size: 28px;
+
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="flex w-full justify-center min-h-screen text-center">
+        <div>
+            <p class="my-8 text-3xl text-blue-700 font-medium">Airport Details</p>
+            <div class="grid grid-cols-2 w-full gap-4">
+                <div class="grid">
+                    <p class="text-center font-semibold">IATA</p>
+                    <input class="border-2 rounded-md border-gray-700 px-2 py-1" type="text" id="iata">
+                </div>
+                <div class="grid">
+                    <p class="text-center font-semibold">ICAO</p>
+                    <input class="border-2 rounded-md border-gray-700 px-2 py-1" type="text" id="icao">
+                </div>
+            </div>
+            <div id="btn" class="px-2 py-1 bg-blue-700 text-white w-fit mx-auto mt-8 rounded-lg">
+                Get Details
+            </div>
+        </div>
+    </div>
+    <script src="./exercise.js"></script>
+</body>
+</html>
