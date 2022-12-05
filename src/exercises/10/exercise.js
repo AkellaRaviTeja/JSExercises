@@ -15,4 +15,11 @@
 		}
 	]
 */
-function findVoteEligibleCandidates(populationList) {}
+function findVoteEligibleCandidates(populationList) {
+  let elibileCandidates = populationList.filter(function (candidates) {
+    if (candidates.age > 18) {
+      return true;
+    }
+  });
+  console.log(elibileCandidates);
+}
