@@ -2,12 +2,12 @@
 //  - comment the reason for failure.
 //  - Fix the issue.
 
+//let is a block variable, there can not accessed from out of the block { }
 function divideTenByNumber(number) {
   if (number != 0) {
-    let result = 10 / number;
+    var result = 10 / number;
   } else {
-    let result = "Indeterminate";
+    var result = "Indeterminate";
   }
-
   console.log(`Result after dividing 10 by ${number} is ${result}`);
 }

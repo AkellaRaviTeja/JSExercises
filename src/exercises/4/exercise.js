@@ -3,7 +3,7 @@
 //  - Comment its uses.
 
 function greeting(firstName, lastName) {
-  let welcomeGreeting;
-
+  let welcomeGreeting = `${firstName} ${lastName}`;
+  //using template literal to replacing the variables with real values
   console.log(welcomeGreeting);
 }
