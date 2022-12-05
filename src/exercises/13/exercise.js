@@ -5,6 +5,13 @@ const employee = {
   lastName: "Teja",
   age: 29,
   id: 1122,
-  getFullName: function () {},
-  checkVoteEligiblity: function () {},
+  getFullName: function () {
+    return this.firstName + " " + this.lastName;
+  },
+  checkVoteEligiblity: function () {
+    if (this.age > 18) {
+      return "Eligible";
+    }
+    return "NotEligible";
+  },
 };
