@@ -35,3 +35,53 @@
 
 
 */
+
+
+class Airport {
+    async getInfoFromIATA(code) {
+        
+        const options = {
+            method: 'GET',
+            headers: {
+                'X-RapidAPI-Key': 'd1dd18b801mshac813251f1cb31cp1950bdjsnffac2a264649',
+                'X-RapidAPI-Host': 'airport-info.p.rapidapi.com'
+            },
+        };
+        
+        let res = await fetch(`https://airport-info.p.rapidapi.com/airport?iata=${code}`, options)
+        return await res.json()
+    }
+    
+    
+    async getInfoFromICAO(code) {
+        
+        const options = {
+            method: 'GET',
+            headers: {
+                'X-RapidAPI-Key': 'd1dd18b801mshac813251f1cb31cp1950bdjsnffac2a264649',
+                'X-RapidAPI-Host': 'airport-info.p.rapidapi.com'
+            },
+        };
+        
+        let res = await fetch(`https://airport-info.p.rapidapi.com/airport?icao=${code}`, options)
+        return await res.json()
+    }
+}
+
+
+document.getElementById('btn').addEventListener('click', async () => {
+    let airport = new Airport()
+    let iata = document.getElementById('iata').value
+    let icao = document.getElementById('icao').value
+    if(iata === '' && icao === '') {
+        alert("Enter IATA/ICAO code to get airport data.")
+        return;
+    }
+    if(iata) {
+        console.log(await airport.getInfoFromIATA(iata))
+    }
+    if(icao) {
+        console.log(await airport.getInfoFromICAO(icao))
+    }
+    
+})

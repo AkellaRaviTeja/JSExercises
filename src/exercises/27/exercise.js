@@ -1,5 +1,9 @@
 // What is a callback?
 
+// Callback is a function that is passed as an argument to other function.
+// It can be used to call a function after a certain operation/event is done.
+
+
 function welcome(name) {
   setTimeout(() => {
     console.log(`Welcome ${name}`);
@@ -7,10 +11,12 @@ function welcome(name) {
 }
 
 function success() {
-  console.log("Greetings successful!!");
+  setTimeout(() => {
+    console.log("Greetings successful!!");
+  }, 1001);
 }
 
-welcome();
+welcome('User');
 success();
 
 // In the above example:

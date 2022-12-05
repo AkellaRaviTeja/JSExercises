@@ -21,3 +21,16 @@ console.log(A() ?? C() ?? D());
 console.log(B() ?? D());
 
 //Comment the outputs below and reason
+
+
+/**
+ * 
+ * ?? operator return RHS only if the LHS has null or undefined
+ * 
+ * Line 20
+ * since A() and C() returned undefined and null respectively. So the returned value from D() has been printed 
+ * 
+ * Line 21 
+ * since B() doesn't have a null or undefined return value it simple prints the returned value from B() i.e, false
+ * 
+ */
