@@ -13,4 +13,16 @@ function learnEventLoops() {
   }, 1); // 1 millisec
   console.log("Learning completed!!");
 }
-main();
+/*
+output:
+Learning event lopps
+Learning completed!!
+50% Learning done!
+75% Learning done!
+
+JavaScript execute the code by line by line, javaScript follow synchronous.
+while in the above code we use setTimeout function which make the execution asynchronous
+those setTimeout function will executed after the time which was initialized.
+javascript doesn't wait utill the execution of asynchronous functions.It will execute remaining 
+lines of code.
+*/

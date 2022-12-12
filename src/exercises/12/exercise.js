@@ -5,5 +5,12 @@ function errorFunction() {
 }
 
 function errorCaller() {
-  errorFunction();
+  //try block is to run the code to overcome the error exceptions
+  //The catch statement allows you to define a block of code to be executed, if an error occurs in the try block.
+  //both try block and catch block declare as a pair
+  try {
+    errorFunction();
+  } catch (err) {
+    console.log(err);
+  }
 }

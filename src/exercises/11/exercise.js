@@ -2,4 +2,9 @@
 // - Use Array methods
 // - Do not use loops
 
-function sumOfArray(inputArray) {}
+function sumOfArray(inputArray) {
+  let result = inputArray.reduce(function (total, age) {
+    return total + age;
+  }, 0);
+  console.log(result);
+}

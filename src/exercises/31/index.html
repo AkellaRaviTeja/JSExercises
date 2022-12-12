@@ -1,0 +1,40 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        height: 100%;
+        width: 100%;
+        text-align: center;
+      }
+      .controls {
+        display: inline;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1>Translator</h1>
+      <div>
+        <textarea id="textAreaInput" rows="4" cols="30"></textarea>
+        <textarea id="textAreaOutput" rows="4" cols="30"></textarea>
+      </div>
+      <ul class="controls">
+        <li class="row-from">
+          <select id="languageFrom">
+            <option>English</option>
+          </select>
+        </li>
+        <li class="exchange">to</li>
+        <li class="row-to">
+          <select id="languageTo"></select>
+        </li>
+      </ul>
+    </div>
+    <button id="enter">translate</button>
+    <script src="./exercise.js"></script>
+  </body>
+</html>

@@ -7,4 +7,56 @@
 
 const counter = (function () {
   //Your code goes here.
+  let privateCounter = 0;
+  function changeBy(val) {
+    privateCounter += val;
+  }
+
+  return {
+    increment() {
+      changeBy(1);
+    },
+
+    decrement() {
+      changeBy(-1);
+    },
+
+    value() {
+      return privateCounter;
+    },
+  };
 })();
+
+console.log(counter.value()); // 0
+
+console.log(counter.increment());
+console.log(counter.increment());
+
+console.log(counter.value()); //2
+
+console.log(counter.decrement());
+
+console.log(counter.value()); //1
+
+
+//yes, in this exercise we use anonymus function
+//At line number 8
+/* (function(){
+  /..
+})();
+*/
+
+//IIFE(immediately invoking function expression)
+/*Syntax:
+(function(){
+  //statements..
+})();
+
+(()=>
+  //statements..
+)();
+
+In Javascript the function are invoked immediately with out call them with the help of IIFE
+*/
+
+

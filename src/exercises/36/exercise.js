@@ -17,7 +17,16 @@ function D() {
   console.log("D was called");
   return "foo";
 }
-console.log(A() ?? C() ?? D());
+console.log(A() ?? C() ?? D()); //
 console.log(B() ?? D());
 
 //Comment the outputs below and reason
+
+/*output:
+A was called
+c was called 
+d was called
+foo //(undefined ?? null ?? foo)
+b was called
+false //(false ?? ...)
+*/

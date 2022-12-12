@@ -16,3 +16,12 @@
 // 	id : 1122,
 // 	age : 29
 // }
+const obj = {
+  name: "Ravi",
+  id: 1122,
+  age: 29,
+};
+const { name, ...otherProperties } = obj;
+
+console.log(name); //Ravi
+console.log(otherProperties); //{id:1122,age:29}
