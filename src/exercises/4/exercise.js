@@ -2,8 +2,12 @@
 //  - Use string template literal
 //  - Comment its uses.
 
+//Using string template literal gives better readability and ends the use of 
+// concatenation operator and single/double quotes for concatenation.
 function greeting(firstName, lastName) {
-  let welcomeGreeting;
+  let welcomeGreeting=`Welcome ${firstName} ${lastName}.`;
 
   console.log(welcomeGreeting);
 }
+
+
