@@ -3,5 +3,8 @@
 // - Do not use loops
 
 function multiplyArrayByTwo(inputArray) {
-  console.log(`Given input array is ${inputArray}`);
+  let outputArray = inputArray.map(i=>i*2,1)
+  console.log(`Given input array is ${outputArray}`);
 }
+
+
