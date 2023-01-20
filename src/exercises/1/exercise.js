@@ -7,3 +7,4 @@ function printOneToTen() {
     console.log(`\n${number}`);
   }
 }
+// const cannot be changed once declared So added let instead of that
