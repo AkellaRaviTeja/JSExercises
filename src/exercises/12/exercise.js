@@ -5,5 +5,9 @@ function errorFunction() {
 }
 
 function errorCaller() {
-  errorFunction();
+  try{
+    errorFunction();
+  }catch(err){
+    console.log(err);
+  }
 }
