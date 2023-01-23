@@ -4,4 +4,5 @@
 function commaSeparatedString(inputArray) {
   // Given an Array like ["firstName","lastName"]
   // Return a comma separated String like "firstName,lastName"
+  return inputArray.toString();
 }
