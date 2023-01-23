@@ -3,25 +3,32 @@
 // - Create function for all the possible functionalities.
 
 class Leave {
-  constructor(leaveAppliedDate,dateOfLeave,reasonForLeave){
+  constructor(leaveAppliedDate,startDateOfLeave,endDateOfLeave,reasonForLeave){
     this.leaveAppliedDate=leaveAppliedDate;
-    this.dateOfLeave=dateOfLeave;
+    this.startDateOfLeave=startDateOfLeave;
+    this.endDateOfLeave=endDateOfLeave;
     this.reasonForLeave=reasonForLeave;
   }
-  getleaveAppliedDate(){
+  getLeaveAppliedDate(){
     return this.leaveAppliedDate;
   }
-  getdateOfLeave(){
-    return this.dateOfLeave;
+  getStartDateOfLeave(){
+    return this.startDateOfLeave;
+  }
+  getEndDateOfLeave(){
+    return this.endDateOfLeave;
   }
   getReasonForLeave(){
     return this.reasonForLeave;
   }
-  setleaveAppliedDate(leaveAppliedDate){
+  setLeaveAppliedDate(leaveAppliedDate){
     this.leaveAppliedDate=leaveAppliedDate;
   }
-  setdateOfLeave(dateOfLeave){
-    this.dateOfLeave=dateOfLeave;
+  setStartDateOfLeave(startDateOfLeave){
+    this.startDateOfLeave=startDateOfLeave;
+  }
+  setEndDateOfLeave(EndDateOfLeave){
+    this.EndDateOfLeave=EndDateOfLeave;
   }
   setReasonForLeave(reasonForLeave){
     this.reasonForLeave=reasonForLeave;
