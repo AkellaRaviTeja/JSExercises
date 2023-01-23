@@ -15,4 +15,8 @@
 		}
 	]
 */
-function findVoteEligibleCandidates(populationList) {}
+function findVoteEligibleCandidates(populationList) {
+	let resultArray=populationList.filter((candidate)=> candidate.age>18);
+	resultArray.forEach((candidate)=> console.log(candidate.name));
+}
+
