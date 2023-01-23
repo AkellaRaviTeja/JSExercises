@@ -2,4 +2,8 @@
 // - Print the given Array. One element in one line
 // - Use loops
 
-function printArray(inputArray) {}
+function printArray(inputArray) {
+    for(element of inputArray){
+        console.log(element);
+    }
+}
