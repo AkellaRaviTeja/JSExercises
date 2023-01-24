@@ -4,7 +4,7 @@
 // In other words, a closure gives you access to an outer function's scope from an inner function.
 
 function counter(){
-    let count=0;
+    var count=0;
     function updateCounter(){
         return ++count;
     }
