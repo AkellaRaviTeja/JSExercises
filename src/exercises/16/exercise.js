@@ -2,7 +2,7 @@
 // - Identify the class variables
 // - Create function for all the possible functionalities.
 
-class Leave {
+export class Leave {
   //...
   constructor(days) {
     this.days = days
@@ -12,5 +12,5 @@ class Leave {
   }
 }
 
-let leave = new Leave(10);
-console.log(leave.getDaysCount())
+// let leave = new Leave(10);
+// console.log(leave.getDaysCount())

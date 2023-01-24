@@ -1,16 +1,8 @@
 // Extend the Leave class, to create different classes for different Leave types.
 
-class Leave {
-    //...
-    constructor(days) {
-      this.days = days
-    }
-    getDaysCount() {
-      return this.days
-    }    
-}
+import {Leave} from '../16/exercise.js';
 
-class SickLeave extends Leave {
+export class SickLeave extends Leave {
     constructor(days) {
         super(days)
     }
@@ -19,5 +11,5 @@ class SickLeave extends Leave {
     }
 }
 
-const sickLeave = new SickLeave(10)
-console.log(sickLeave.getLeaveDetails())
+// const sickLeave = new SickLeave(10)
+// console.log(sickLeave.getLeaveDetails())
