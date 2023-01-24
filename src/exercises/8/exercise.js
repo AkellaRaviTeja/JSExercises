@@ -3,7 +3,7 @@
 // - Use loops
 
 function printArray(inputArray) {
-    for(let i of inputArray) 
+    for (let i of inputArray) 
         console.log(i)
 }
 // printArray([1,2])

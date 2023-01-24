@@ -9,4 +9,4 @@ function findTheLength(inputArray) {
   let lengthOfArray = inputArray.length
   console.log(`Length of the given input array is ${lengthOfArray}`);
 }
-findTheLength([1,2,4])
+findTheLength([1, 2, 4])

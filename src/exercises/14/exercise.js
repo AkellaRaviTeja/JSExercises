@@ -17,7 +17,7 @@ const employee = {
 
 const newEmployee = {
   firstName: "New",
-  lastName: "Employee",
+  lastName: "Employee"
 };
 
 console.log(employee.getFullName(newEmployee.firstName, newEmployee.lastName))

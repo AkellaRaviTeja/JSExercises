@@ -9,11 +9,11 @@ const employee = {
     return this.firstName + " " + this.lastName
   },
   checkVoteEligiblity: function () {
-    if(this.age >= 18){
+    if (this.age >= 18) {
       console.log("You are eligible to vote")
       return true
     }
-    else{
+    else {
       console.log("You are not eligible to vote")
       return false
     }

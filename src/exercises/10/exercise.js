@@ -17,7 +17,7 @@
 
 function findVoteEligibleCandidates(populationList) {
 	populationList.forEach( item => {
-		if(item.age >= 18)
+		if (item.age >= 18)
 			console.log(item.name)
 	})
 }

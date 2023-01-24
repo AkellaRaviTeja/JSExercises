@@ -3,12 +3,12 @@
 import {Leave} from '../16/exercise.js';
 
 export class SickLeave extends Leave {
-    constructor(days) {
-        super(days)
-    }
-    getLeaveDetails() {
-        return `this is a Sick leave for ${this.getDaysCount()} days`
-    }
+  constructor(days) {
+    super(days)
+  }
+  getLeaveDetails() {
+    return `this is a Sick leave for ${this.getDaysCount()} days`
+  }
 }
 
 // const sickLeave = new SickLeave(10)

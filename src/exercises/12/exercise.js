@@ -5,7 +5,7 @@ function errorFunction() {
 }
 
 function errorCaller() {
-  try{
+  try {
     errorFunction()
   }
   catch(err) {
