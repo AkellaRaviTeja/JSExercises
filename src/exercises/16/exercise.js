@@ -27,8 +27,8 @@ class Leave {
   setStartDateOfLeave(startDateOfLeave){
     this.startDateOfLeave=startDateOfLeave;
   }
-  setEndDateOfLeave(EndDateOfLeave){
-    this.EndDateOfLeave=EndDateOfLeave;
+  setEndDateOfLeave(endDateOfLeave){
+    this.endDateOfLeave=endDateOfLeave;
   }
   setReasonForLeave(reasonForLeave){
     this.reasonForLeave=reasonForLeave;
