@@ -21,3 +21,17 @@ console.log(A() ?? C() ?? D());
 console.log(B() ?? D());
 
 //Comment the outputs below and reason
+
+/* Output : 
+      A was called
+      C was called
+      D was called
+      foo
+      B was called  
+      false
+*/
+
+/* Reason :
+    In the first console.log() , Initially A() will be called and then since A() returns undefined so C() will be called and then since C() returns null , D() will be called and D() returns "foo" string.hence foo will be printed.
+    In the second console.log() , B() will be called and since B() returns false which is other than undefined and null hence D() wont be executed and that returned false will be printed to console.
+*/
