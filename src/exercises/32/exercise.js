@@ -35,3 +35,44 @@
 
 
 */
+
+
+
+class Airport {
+  options = {
+    method: 'GET',
+    headers: {
+      'X-RapidAPI-Key': '5e9a174c11msh25e8bc2b6b4f77bp1b5864jsn87f56e2753dd',
+      'X-RapidAPI-Host': 'airport-info.p.rapidapi.com'
+    }
+  };
+
+  getInfoFromIATA(cityCode) {
+
+    return fetch(`https://airport-info.p.rapidapi.com/airport?iata=${cityCode}`, this.options)
+      .then(response => response.json())
+      .then(response => {
+        return response
+      })
+      .catch(err => console.error(err));
+  }
+
+  getInfoFromICAO(cityCode) {
+
+    return fetch(`https://airport-info.p.rapidapi.com/airport?icao=${cityCode}`, this.options)
+      .then(response => response.json())
+      .then(response => {
+        return response
+      })
+      .catch(err => console.error(err));
+  }
+}
+
+(async function (){
+  const airport = new Airport();
+  let res1 = await airport.getInfoFromIATA("HYD")
+  let res2 = await airport.getInfoFromICAO("VOHS")
+  console.log(res1)
+  console.log(res2)
+})()
+
