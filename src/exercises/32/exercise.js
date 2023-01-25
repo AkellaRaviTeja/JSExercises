@@ -35,3 +35,29 @@
 
 
 */
+
+class Airport{
+    options = {
+        method: 'GET',
+        headers: {
+            'X-RapidAPI-Key': '668e5ef8a4msh174236d9df7dce4p121bc7jsncd08a03c8072',
+            'X-RapidAPI-Host': 'airport-info.p.rapidapi.com'
+        }
+    }
+    printInfo(codeType,code){
+        fetch(`https://airport-info.p.rapidapi.com/airport?${codeType}=${code}`, this.options)
+        .then(response => response.json())
+        .then(response => console.log(response))
+        .catch(err => console.error(err));
+    }
+    getInfoFromIATA(code){
+        this.printInfo("iata",code);
+    }
+    getInfoFromICAO(code){
+        this.printInfo("icao",code);
+    }
+}
+
+let airport=new Airport();
+airport.getInfoFromIATA("HYD");
+airport.getInfoFromICAO("HYD");
