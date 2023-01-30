@@ -5,6 +5,19 @@ const employee = {
   lastName: "Teja",
   age: 29,
   id: 1122,
-  getFullName: function () {},
-  checkVoteEligiblity: function () {},
+  getFullName: function () {
+    return this.firstName + " " + this.lastName
+  },
+  checkVoteEligiblity: function () {
+    if (this.age >= 18) {
+      console.log("You are eligible to vote")
+      return true
+    }
+    else {
+      console.log("You are not eligible to vote")
+      return false
+    }
+  },
 };
+
+// console.log(employee.checkVoteEligiblity())

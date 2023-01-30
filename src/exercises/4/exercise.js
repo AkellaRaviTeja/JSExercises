@@ -3,7 +3,8 @@
 //  - Comment its uses.
 
 function greeting(firstName, lastName) {
-  let welcomeGreeting;
-
+  let welcomeGreeting = `Welcome ${firstName} ${lastName}`;
+  // easy concat strings
   console.log(welcomeGreeting);
 }
+// greeting('John', 'Doe')

@@ -1,0 +1,14 @@
+{
+  "name": "37",
+  "version": "1.0.0",
+  "description": "",
+  "main": "exercise.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Yashwanth",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.4.0"
+  }
+}

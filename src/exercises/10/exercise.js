@@ -3,16 +3,23 @@
 // - Do not use loops
 
 // Example of inputArray
-/*
-	[
-		{
-			name:"Ravi",
-			age:28
-		},
-		{
-			name:"Teja",
-			age:28
-		}
-	]
-*/
-function findVoteEligibleCandidates(populationList) {}
+// const inputArray = 
+// 	[
+// 		{
+// 			name:"Ravi",
+// 			age:28
+// 		},
+// 		{
+// 			name:"Teja",
+// 			age:28
+// 		}
+// 	]
+
+function findVoteEligibleCandidates(populationList) {
+	populationList.forEach( item => {
+		if (item.age >= 18)
+			console.log(item.name)
+	})
+}
+
+// findVoteEligibleCandidates(inputArray)
