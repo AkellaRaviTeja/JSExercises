@@ -35,3 +35,42 @@
 
 
 */
+
+class Airport{
+    constructor(){}
+    async getInfoFromIATA(iata) {
+        const options = {
+            method: 'GET',
+            headers: {
+                'X-RapidAPI-Key': 'ed5b223a5bmshf6082bda638c5e7p15d577jsn471e57cbe725',
+                'X-RapidAPI-Host': 'airport-info.p.rapidapi.com'
+            }
+        };
+        
+        let f = await fetch(`https://airport-info.p.rapidapi.com/airport?iata=${iata}`, options)
+        let result = await f.json()
+        return result
+        
+    }
+    async getInfoFromICAO(icao) {
+        const options = {
+            method: 'GET',
+            headers: {
+                'X-RapidAPI-Key': 'ed5b223a5bmshf6082bda638c5e7p15d577jsn471e57cbe725',
+                'X-RapidAPI-Host': 'airport-info.p.rapidapi.com'
+            }
+        };
+        
+        let f = await fetch(`https://airport-info.p.rapidapi.com/airport?iata=${icao}`, options)
+        let result = await f.json()
+        return result
+    }
+}
+
+async function display() {
+    airport = new Airport()
+    console.log(await airport.getInfoFromIATA("HYD"))
+    console.log( await airport.getInfoFromICAO("HYD"))
+}
+
+display()

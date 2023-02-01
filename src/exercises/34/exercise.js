@@ -1,7 +1,7 @@
 // Default parameters
 // - Read : https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Default_parameters
 
-function multiply(num1, num2) {
+function multiply(num1=1, num2=1) {
   return num1 * num2;
 }
 
@@ -13,3 +13,5 @@ function multiply(num1, num2) {
 // After the change
 // multiply(4) - Should return 4
 // multiply() - Should return 1
+console.log(multiply(4))
+console.log(multiply())

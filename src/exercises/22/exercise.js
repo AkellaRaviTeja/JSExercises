@@ -5,9 +5,14 @@
 function randomCalculator() {
   let x = 10,
     y = 0;
+  debugger;
   x = x * 10 + 1 - (2 / 2) * 3;
-  y = x - 1 + 3 * 10 - 2;
+  y = x - 1 + 3 * 10 - 2; 
   x = x * 2 - (1 / 3) * 3;
   x = x + 10 - 2 - 3 * 2;
   console.log(x);
 }
+randomCalculator();
+//"Watch" allows us, not to log values of the variables in the console. We can observe the changes in the 
+//values of the variable after executing every statement.
+

@@ -16,3 +16,14 @@
 // 	id : 1122,
 // 	age : 29
 // }
+
+let obj = {
+   		name: "Ravi",
+   		id : 1122,
+   		age : 29
+   	}
+
+let { name, ...otherProperties  } = obj
+
+console.log(name)
+console.log(otherProperties)

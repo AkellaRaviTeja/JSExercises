@@ -21,3 +21,13 @@ console.log(A() ?? C() ?? D());
 console.log(B() ?? D());
 
 //Comment the outputs below and reason
+
+// A was called
+// C was called
+// D was called
+// foo
+// B was called
+// false
+
+//Null coalescing operator(??) returns its right-hand side operand when its left-hand side
+//  operand is null or undefined, and otherwise returns its left - hand side operand.

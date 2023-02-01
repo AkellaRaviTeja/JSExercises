@@ -2,4 +2,8 @@
 // - Use Array methods
 // - Do not use loops
 
-function sumOfArray(inputArray) {}
+function sumOfArray(inputArray) {
+   let sum = inputArray.reduce((a, b) => a + b, 0)
+   console.log((sum))
+}
+

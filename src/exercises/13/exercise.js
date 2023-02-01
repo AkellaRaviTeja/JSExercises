@@ -5,6 +5,10 @@ const employee = {
   lastName: "Teja",
   age: 29,
   id: 1122,
-  getFullName: function () {},
-  checkVoteEligiblity: function () {},
+  getFullName: function () {console.log(`${this.firstName} ${this.lastName}`)},
+  checkVoteEligiblity: function () {
+    if (this.age > 18) { console.log("Eligible to vote") }
+    else{console.log("Not eligible to vote")}
+  },
 };
+

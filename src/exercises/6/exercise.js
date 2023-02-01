@@ -3,5 +3,11 @@
 
 function findTheLength(inputArray) {
   let lengthOfArray;
-  console.log(`Length of the given input array is ${lengthOfArray}`);
+  if (Array.isArray(inputArray)) {
+    lengthOfArray = inputArray.length;
+    console.log(`Length of the given input array is ${lengthOfArray}`);
+  }
+  else {
+    console.log(`Please give array as input.`);
+  }
 }

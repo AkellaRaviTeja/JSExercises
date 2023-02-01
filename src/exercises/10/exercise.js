@@ -15,4 +15,8 @@
 		}
 	]
 */
-function findVoteEligibleCandidates(populationList) {}
+function findVoteEligibleCandidates(populationList) {
+	let eligibleList = populationList.filter(i => i.age > 18, 0).map(i => i.name, 0)
+	eligibleList.map(i=>console.log(i),0)
+}
+
