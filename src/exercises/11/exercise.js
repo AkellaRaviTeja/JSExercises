@@ -2,4 +2,6 @@
 // - Use Array methods
 // - Do not use loops
 
-function sumOfArray(inputArray) {}
+function sumOfArray(inputArray) {
+    return `${inputArray.reduce((total,value) => total + value)}`;
+}
