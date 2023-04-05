@@ -11,3 +11,4 @@
 
 // Declaration of translate
 // function translate(sourceString:string, targetLanguage:string)
+//

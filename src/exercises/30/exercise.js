@@ -8,7 +8,7 @@
 let TimerTag = document.getElementById("timer");
 let i = 0;
 const timer = setInterval(() => {
-  TimerTag.textContent = `Timer: ${i}`;
   i++;
+  TimerTag.textContent = `Timer: ${i}`;
   i >= 60 && clearInterval(timer);
 }, 1000);
