@@ -9,7 +9,6 @@ const employee = {
   age: 29,
   id: 1122,
   getFullName: function () {
-    //Copy the solution from the exercise before this.
     return `${this.firstName} ${this.lastName}`;
   },
 };

@@ -5,7 +5,6 @@
 function checkIfArray(input) {
   let isInputAnArray = false;
 
-  //...
   if (Array.isArray(input)) {
     isInputAnArray = true;
   }
