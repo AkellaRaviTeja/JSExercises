@@ -14,15 +14,18 @@ function divideTenByNumber(number) {
   }
 
   console.log(`Result after dividing 10 by ${number} is ${result}`);
+  return result;
 }
 
 // 2). we can declare variable as var , var is globle scope variable so we can call the variable any where.
-function divideTenByNumber(number) {
-  if (number != 0) {
-    var result = 10 / number;
-  } else {
-    var result = "Indeterminate";
-  }
+// function divideTenByNumber(number) {
+//   if (number != 0) {
+//     var result = 10 / number;
+//   } else {
+//     var result = "Indeterminate";
+//   }
 
-  console.log(`Result after dividing 10 by ${number} is ${result}`);
-}
+//   console.log(`Result after dividing 10 by ${number} is ${result}`);
+// }
+
+module.exports = divideTenByNumber;
