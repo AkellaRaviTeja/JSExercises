@@ -7,9 +7,12 @@
 function randomCalculator() {
   let x = 10,
     y = 0;
-  x = x * 10 + 1 - (2 / 2) * 3; //x=98,y=0
-  y = x - 1 + 3 * 10 - 2; //y=125,x=98
+    debugger;
+  x = x * 10 + 1 - (2 / 2) * 3; //x=98
+  y = x - 1 + 3 * 10 - 2; //y=125
   x = x * 2 - (1 / 3) * 3; //y=125,x=195
   x = x + 10 - 2 - 3 * 2;
   console.log(x); //x = 195;
 }
+
+randomCalculator() 
