@@ -11,3 +11,29 @@
 
 // Declaration of translate
 // function translate(sourceString:string, targetLanguage:string)
+class Translator {
+    static translate(sourceString, targetLanguage) {
+        // Your code here
+        const encodedParams = new URLSearchParams();
+        encodedParams.append("q", sourceString);
+        encodedParams.append("target", targetLanguage);
+        encodedParams.append("source", "en");
+
+        const options = {
+            method: 'POST',
+            headers: {
+                'content-type': 'application/x-www-form-urlencoded',
+                'Accept-Encoding': 'application/gzip',
+                'X-RapidAPI-Key': '26e8a0f98fmshdcd189ad8bdba07p129d5djsnf0c06a093d31',
+                'X-RapidAPI-Host': 'google-translate1.p.rapidapi.com'
+            },
+            body: encodedParams
+        };
+
+        fetch('https://google-translate1.p.rapidapi.com/language/translate/v2', options)
+            .then(response => response.json())
+            .then(response => console.log(response.data.translations[0].translatedText))
+            .catch(err => console.error(err));
+    }
+}
+Translator.translate("Hello", "fr");
