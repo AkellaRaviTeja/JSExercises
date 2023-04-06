@@ -3,5 +3,5 @@
 // - Do not use loops
 
 function sumOfArray(inputArray) {
-    return `${inputArray.reduce((total,value) => total + value)}`;
+    return `${inputArray.reduce((total, value) => total + value)}`;
 }

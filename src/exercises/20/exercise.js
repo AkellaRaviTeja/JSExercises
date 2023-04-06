@@ -5,7 +5,7 @@
 
 // Debugger is a keyword that stops the execution of the code and allows you to inspect the current state of the code. It is useful for debugging purposes.
 
-/*Debugging is the process of finding and fixing errors within a script. 
+/*Debugging is the process of finding and fixing errors within a script.
   A breakpoint is a point of code where the debugger will automatically pause the JavaScript execution.
   While the code is paused, we can examine current variables, execute commands in the console etc. In other words, we can debug it.
 
