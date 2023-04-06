@@ -21,3 +21,14 @@ console.log(A() ?? C() ?? D());
 console.log(B() ?? D());
 
 //Comment the outputs below and reason
+/*
+                  A was called
+                  C was called
+                  D was called
+                  foo
+                  B was called
+                  false
+*/
+
+// First A is called and it returns undefined. So the next value is C which returns null. So the next value is D which returns "foo". So the final value is "foo".
+// In the second case B is called and it returns false. So it doesn't go to the next value.
