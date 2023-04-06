@@ -16,3 +16,12 @@
 // 	id : 1122,
 // 	age : 29
 // }
+
+const givenObject = {
+  name: "Ravi",
+  id: 1122,
+  age: 29,
+};
+
+const { name, ...otherProperties } = givenObject;
+console.log(name, otherProperties);
