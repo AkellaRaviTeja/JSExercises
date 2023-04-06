@@ -9,3 +9,4 @@ function findTheLength(inputArray) {
     console.log("Your passed argument is not a valid array");
   }
 }
+module.exports = findTheLength;
