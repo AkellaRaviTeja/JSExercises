@@ -4,11 +4,11 @@
 // - Read : https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax
 
 // Given an object
-// 	{
-// 		name: "Ravi",
-// 		id : 1122,
-// 		age : 29
-// 	}
+object = {
+    name: "Ravi",
+    id: 1122,
+    age: 29
+}
 
 // Create a two variables
 // 1. name - Its value should be "Ravi"
@@ -16,3 +16,7 @@
 // 	id : 1122,
 // 	age : 29
 // }
+
+const { name, ...otherProperties } = object;
+console.log(name);
+console.log(otherProperties);
