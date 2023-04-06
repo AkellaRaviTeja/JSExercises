@@ -9,6 +9,8 @@
 
 function printOneToTen() {
   for (let number = 1; number <= 10; number++) {
-    console.log(`\n${number}`);
+    console.log(number);
   }
 }
+
+module.exports = printOneToTen;
