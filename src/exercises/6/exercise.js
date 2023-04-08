@@ -2,6 +2,11 @@
 // - Also validate the input. Accept the input only if its an array.
 
 function findTheLength(inputArray) {
-  let lengthOfArray;
-  console.log(`Length of the given input array is ${lengthOfArray}`);
+  if (Array.isArray(inputArray)) {
+    let lengthOfArray = inputArray.length;
+    console.log(`Length of the given input array is ${lengthOfArray}`);
+  } else {
+    console.log("Your passed argument is not a valid array");
+  }
 }
+module.exports = findTheLength;
