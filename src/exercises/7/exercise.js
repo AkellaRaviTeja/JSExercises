@@ -6,3 +6,4 @@ function commaSeparatedString(inputArray) {
   // Return a comma separated String like "firstName,lastName"
   return inputArray.join(",");
 }
+module.exports = commaSeparatedString;

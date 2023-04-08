@@ -3,5 +3,6 @@
 // - Use loops
 
 function printArray(inputArray) {
-    return inputArray.forEach((element) => { console.log(element); });
+    inputArray.forEach((element) => { console.log(element); });
 }
+module.exports = printArray;

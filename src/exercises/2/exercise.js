@@ -11,5 +11,8 @@ function divideTenByNumber(number) {
     result = "Indeterminate";
   }
 
-  console.log(`Result after dividing 10 by ${number} is ${result}`);
+  //console.log(`Result after dividing 10 by ${number} is ${result}`);
+  return result;
 }
+
+module.exports = divideTenByNumber;

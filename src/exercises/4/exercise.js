@@ -7,3 +7,4 @@ function greeting(firstName, lastName) {
   //Template literals provide an easy way to interpolate variables and expressions into strings.
   console.log(welcomeGreeting);
 }
+module.exports = greeting;

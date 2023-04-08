@@ -12,3 +12,5 @@ function checkIfArray(input) {
     console.log("Given input is not an Array");
   }
 }
+
+module.exports = checkIfArray;

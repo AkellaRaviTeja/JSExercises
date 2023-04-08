@@ -9,3 +9,4 @@ function binaryToDecimal(binaryString) {
     `Decimal for the given binary string ${binaryString} is ${decimalValue}`
   );
 }
+module.exports = binaryToDecimal;
