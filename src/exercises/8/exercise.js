@@ -5,4 +5,4 @@
 function printArray(inputArray) {
     inputArray.forEach((element) => { console.log(element); });
 }
-module.exports = printArray;
+//module.exports = printArray;
