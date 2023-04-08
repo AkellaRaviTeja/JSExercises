@@ -11,4 +11,4 @@ function findTheLength(inputArray) {
     console.log("Please enter an array");
   }
 }
-module.exports = findTheLength;
+//module.exports = findTheLength;
