@@ -19,11 +19,6 @@ class Leave {
     this.status = "rejected";
   }
 
-  updateDates(newStartDate, newEndDate) {
-    this.startDate = newStartDate;
-    this.endDate = newEndDate;
-  }
-
   cancel() {
     this.status = "cancelled";
   }

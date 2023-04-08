@@ -11,3 +11,8 @@ const isEven = (num) => {
     return false;
   }
 };
+
+module.exports = {
+  greetings,
+  isEven,
+};
