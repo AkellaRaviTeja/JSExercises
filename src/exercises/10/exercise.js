@@ -17,12 +17,12 @@
 */
 
 //method 1
-function findVoteEligibleCandidates(populationList) {
-  let eligibleCandidates = populationList.filter((ele) => ele.age >= 18);
-  eligibleCandidates.map((ele) => {
-    console.log(ele.name);
-  });
-}
+// function findVoteEligibleCandidates(populationList) {
+//   const eligibleCandidates = populationList.filter((ele) => ele.age >= 18);
+//   eligibleCandidates.map((ele) => {
+//     console.log(ele.name);
+//   });
+// }
 
 //method 2
 
@@ -31,3 +31,5 @@ function findVoteEligibleCandidates(populationList) {
     Candidates.age >= 18 && console.log(Candidates.name);
   });
 }
+
+module.exports = findVoteEligibleCandidates;
