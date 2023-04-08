@@ -3,7 +3,12 @@
 //  - Fix the issue.
 
 function printOneToTen() {
-  for (const number = 1; number <= 10; number++) {
-    console.log(`\n${number}`);
+  let x = [];
+  for (let number = 1; number <= 10; number++) {
+    // Variables defined with const cannot be Reassigned
+    //console.log(`\n${number}`);
+    x.push(number);
   }
+  return x;
 }
+module.exports = printOneToTen;

@@ -15,4 +15,8 @@
 		}
 	]
 */
-function findVoteEligibleCandidates(populationList) {}
+function findVoteEligibleCandidates(populationList) {
+	console.log(`${populationList.filter((element) => element.age >= 18).map((element) => element.name)}`);
+}
+
+module.exports = findVoteEligibleCandidates;
