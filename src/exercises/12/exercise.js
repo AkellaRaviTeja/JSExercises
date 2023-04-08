@@ -1,7 +1,7 @@
 // Gracefully handle the error in the errorCaller function
 
 function errorFunction() {
-  throw "This is a random error";
+  throw new Error("This is a random error");
 }
 
 function errorCaller() {
@@ -11,3 +11,4 @@ function errorCaller() {
     console.log(err);
   }
 }
+module.exports = errorFunction;
