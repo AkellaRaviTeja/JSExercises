@@ -9,7 +9,7 @@ const employee = {
   age: 29,
   id: 1122,
   getFullName: function () {
-  return `${this.firstName} ${this.lastName}`;
+    return `${this.firstName} ${this.lastName}`;
   },
 };
 
@@ -19,3 +19,5 @@ const newEmployee = {
 };
 const fullName = employee.getFullName.call(newEmployee);
 console.log(fullName);
+
+module.exports = employee;
